@@ -118,7 +118,7 @@ h6,
     .navbar .navbar-nav {
         margin-top: 10px;
         border-top: 1px solid rgba(255, 255, 255, .3);
-        background: var(--dark);
+        background: black;
     }
     .navbar .navbar-nav .nav-link {
         padding: 10px 0;

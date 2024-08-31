@@ -595,8 +595,8 @@
             /* Adjust the date font size */
         }
         .post-slide .read-more {
-            padding: 5px 15px;
             /* Smaller button padding */
+            padding: 5px;
             font-size: 10px;
             /* Smaller font size for the button */
         }

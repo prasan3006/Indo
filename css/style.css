@@ -95,7 +95,7 @@
     
     .navbar .navbar-nav .nav-link {
         padding: 35px 15px;
-        color: var(--light);
+        color: black;
         outline: none;
     }
     
@@ -561,25 +561,24 @@
     }
     
     @media (max-width: 767px) {
+        .owl-item {
+            width: 25% !important;
+            /* Ensures two items per row on mobile */
+        }
         .post-slide {
             margin: 10px 5px;
-            /* Reduce margins for mobile */
             border-radius: 10px;
-            /* Adjust the border-radius */
             box-shadow: 0px 10px 15px -7px #bbcbd8;
-            /* Lessen the shadow intensity */
+            display: flex;
+            flex-direction: column;
         }
         .post-slide .post-img {
             border-radius: 8px;
-            /* Smaller border-radius for images */
             margin: 0px;
         }
         .post-slide .post-img img {
             width: 100%;
             height: 150px;
-            /* Adjust the height for mobile */
-            transform: scale(1, 1);
-            transition: transform 0.2s linear;
         }
         .post-slide .post-content {
             padding-top: 15px;
@@ -588,31 +587,24 @@
         }
         .post-slide .post-title a {
             font-size: 14px;
-            /* Slightly smaller font size */
         }
         .post-slide .post-date {
             font-size: 12px;
-            /* Adjust the date font size */
         }
         .post-slide .read-more {
-            /* Smaller button padding */
             padding: 5px;
             font-size: 10px;
-            /* Smaller font size for the button */
         }
-        .owl-controls .owl-buttons .owl-prev,
-        .owl-controls .owl-buttons .owl-next {
-            top: -10%;
-            /* Adjust position for mobile */
-            padding: 0 12px;
-            /* Smaller padding */
-            box-shadow: 2px 10px 20px -8px #92b4d0;
-            /* Adjust box-shadow */
+    }
+    
+    @media (max-width: 767px) {
+        #news-slider .owl-item {
+            width: 25% !important;
+            /* Make each item take up half the width */
         }
-        .owl-controls .owl-buttons .owl-prev:after,
-        .owl-controls .owl-buttons .owl-next:after {
-            font-size: 24px;
-            /* Adjust icon size */
+        #news-slider .post-slide {
+            margin: 10px 5px;
+            /* Adjust margin for spacing */
         }
     }
     
@@ -626,5 +618,9 @@
         .embed-responsive-item {
             height: 400px;
             /* Adjust height for smaller screens */
+        }
+        .img-fluid {
+            height: 800px;
+            width: 750px;
         }
     }

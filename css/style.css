@@ -620,7 +620,7 @@
             /* Adjust height for smaller screens */
         }
         .img-fluid {
-            height: 800px;
+            height: 600px;
             width: 750px;
         }
     }
